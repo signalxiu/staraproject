@@ -1,0 +1,54 @@
+body{
+	background-color: rgb(104,205,213);
+	font-size: 62.5%;
+}
+
+
+
+
+.text{
+	color: #fff; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+ 
+}
+
+.P1{
+	position: absolute;
+    top: 1%;
+    left: 1%;
+   
+}
+
+.P1{
+	width: 100px;
+	height: 100px;
+}
+
+.Pgrapevine{
+	position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.P222{
+	position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    
+}
+
+
+
+.PBJP{
+	position: absolute;
+    top: 70%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    
+}
+
