@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+	padding: 0;
+}
+html,
+body{
+
+    width: 100%;
+    height: 100%;/*让背景图片100%适应整个屏幕*/ 
+}
+ul,
+li{
+
+	list-style: none;
+}
+
+button:focus{
+    outline:0;
+}
+
+        .r999{
+            border-right: 1px solid #999;
+        }
+	    
+        .font{
+            font-size: 1vw;
+        }
+    	.nav ul li a { 
+        	text-align:center ; 
+        	display:block ; 
+        	color:#bbb ;
+        	padding: 5px 0;
+        }
+        .nav ul li:hover ul{
+        	display: block;
+        }
+
+        .nav ul li ul{
+        	display: none;
+        }
+
+	    .flex-center{
+            display: flex;
+            align-items: center;
+        }
+
+	    .my-main{
+	    	position: fixed;
+	        width: 100vw;
+	    	top: 98px;
+	    	bottom: 108px;
+	    	overflow: auto;
+	    }
+	    .my-p{
+	    	margin-bottom: -10px;
+	    }
+	    .my-hand{
+	    	cursor: pointer;
+	    }
+		.img1{
+			background-image: url(mission6/sprite6.png);
+			height:44px;width:42px;background-position:0 0;
+            
+		}
+		.img2{
+			background-image: url(mission6/sprite6.png);
+			height:23px;width:19px;background-position:-60px 0;
+		}
+		.img3{
+			background-image: url(mission6/sprite6.png);
+			height:24px;width:24px;background-position:-100px 0;
+		}
+		.img4{
+			background-image: url(.mission6/sprite6.png);
+			height:33px;width:19px;background-position:-140px 0;;
+		}
+		.img5{
+			background-image: url(mission6/sprite6.png);
+			height:40px;width:46px;background-position:-180px 0;
+		}
+		.img6{
+			background-image: url(mission6/sprite6.png);
+			height:94px;width:94px;background-position:-240px 0;
+		}
+		.img7{
+			background-image: url(mission6/sprite6.png);
+			height:41px;width:42px;background-position:-350px 0;
+		}
+		.border-bottom{
+            border-bottom: 1px solid #ddd;
+        }
+        .margin-left{
+        	margin-left: 10px;
+        }
+        .margin-left2{
+        	margin-left: 20px;
+        }
+        .padding-top{
+        	padding-top: 5px;
+        	padding-bottom: 5px;
+        }
+        .overflow-ellipsis{
+        	overflow: hidden;/*溢出隐藏*/
+            text-overflow: ellipsis;/*文本溢出省略号*/
+            white-space: nowrap;/*不换行*/
+        }
+
+        .colorf0d{
+            background-color: #5fc0cd;
+        }
+        .colorf8{
+            background-color: #f8f8f8;
+        }
+        .colorfff{
+            background-color: #fff;
+        }
+        .color099{
+            background-color: #099;
+        }
+        
+        .fff{
+            color: #fff;
+        }
+        .f0d{
+            color: #5fc0cd;
+        }
+        .bbb{
+            color: #bbb;
+        }
+        .f00{
+            color: #f00;
+        }
