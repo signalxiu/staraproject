@@ -15,28 +15,102 @@ li{
 }
 
 button:focus{
-    outline:0;
-}
 
-        .r999{
-            border-right: 1px solid #999;
+    outline: none !important;
+
+}
+    .w100{
+        overflow: hidden;
+
+    }
+    .foot{
+        height: 7rem;
+        padding: 0.5rem 0 2rem 0;
+
+    }
+    .head1{
+        height: 5.5rem;
+    }
+    .head2{
+        height: 5.125rem;
+    }
+    .whtop{
+        width: 8.75rem;
+        height: 4rem;
+    }
+    .mleft{
+        margin-left: -3px;
+    }
+    .mright{
+        margin-right: -3px;
+    }
+    .mright2{
+        float: right;
+    }
+    .mright3{
+        display: flex;
+        flex: 0 0 80%;
+        justify-content: center;
+        
+        
+    }
+    .mright4{
+        display: flex;
+        flex: 0 0 10%;
+        
+    }
+    
+    .aaa{
+        overflow:hidden;
+    }
+        .bbuton{
+            border: #ff0000 ;
+        }
+        .rbddd{
+            border-radius: 0;   
+            border-bottom: 1px solid #ddd;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+
+        }
+        .rrddd{            
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
+        .rlddd{
+            border-left: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
         }
 	    
         .font{
-            font-size: 1vw;
+            font-size: 1.5rem;
+
         }
     	.nav ul li a { 
         	text-align:center ; 
         	display:block ; 
         	color:#bbb ;
         	padding: 5px 0;
+            text-decoration: none;
         }
         .nav ul li:hover ul{
         	display: block;
         }
 
+
         .nav ul li ul{
         	display: none;
+        }
+        .flex-center2{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+        .flex-end{
+            display: flex;
+            justify-content: space-between;
+            
         }
 
 	    .flex-center{
@@ -47,8 +121,8 @@ button:focus{
 	    .my-main{
 	    	position: fixed;
 	        width: 100vw;
-	    	top: 98px;
-	    	bottom: 108px;
+	    	top: 10.625rem;
+	    	bottom: 7rem;
 	    	overflow: auto;
 	    }
 	    .my-p{
@@ -59,32 +133,39 @@ button:focus{
 	    }
 		.img1{
 			background-image: url(mission6/sprite6.png);
-			height:44px;width:42px;background-position:0 0;
+			height:2.75rem;width:2.625rem;background-position:-0.1rem 0;
+            background-size: 24.5rem 5.875rem;
             
 		}
 		.img2{
 			background-image: url(mission6/sprite6.png);
-			height:23px;width:19px;background-position:-60px 0;
+			height:1.4375rem;width:1.1875rem;background-position: -3.75rem 0;
+            background-size: 24.5rem 5.875rem;
 		}
 		.img3{
 			background-image: url(mission6/sprite6.png);
-			height:24px;width:24px;background-position:-100px 0;
+			height:1.5rem;width:1.5rem;background-position:-6.35rem 0;
+            background-size: 24.5rem 5.875rem;
 		}
 		.img4{
-			background-image: url(.mission6/sprite6.png);
-			height:33px;width:19px;background-position:-140px 0;;
+			background-image: url(mission6/sprite6.png);
+			height:2.0625rem; width: 1.1875rem; background-position:-8rem 0;
+            background-size: 24.5rem 5.875rem;
 		}
 		.img5{
 			background-image: url(mission6/sprite6.png);
-			height:40px;width:46px;background-position:-180px 0;
+			height:2.5rem;width:2.875rem;background-position:-11.25rem 0;
+            background-size: 24.5rem 5.875rem;
 		}
 		.img6{
 			background-image: url(mission6/sprite6.png);
-			height:94px;width:94px;background-position:-240px 0;
+			height:5.875rem;width:5.875rem;background-position:-15rem 0;
+            background-size: 24.5rem 5.875rem;
 		}
 		.img7{
 			background-image: url(mission6/sprite6.png);
-			height:41px;width:42px;background-position:-350px 0;
+			height:2.5625rem;width:2.625rem;background-position:-21.875rem 0;
+            background-size: 24.5rem 5.875rem;
 		}
 		.border-bottom{
             border-bottom: 1px solid #ddd;
@@ -109,7 +190,7 @@ button:focus{
             background-color: #5fc0cd;
         }
         .colorf8{
-            background-color: #f8f8f8;
+            background-color: transparent;
         }
         .colorfff{
             background-color: #fff;
