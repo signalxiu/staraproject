@@ -18,216 +18,231 @@ button:focus {
     outline: none;
 }
 
+header nav a:hover{
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    border-bottom: 3px solid #fff;
+
+}
+footer nav a:hover{
+
+    outline: none;
+    color: #fff;
+
+
+}
+
 .img-p {
     background-image: url(../../picture/task8/sprite-partner.png);
     background-size: 9.51rem 3.7rem;
 }
 
 .img-x {
-    background-image: url(../../picture/task8/sprite-partner.png);
+    background-image: url(../../picture/task8/sprite-xicon.png);
     background-size: 7.34rem 0.62rem;
 }
 
 .img-h {
-    background-image: url(../../picture/task8/sprite-partner.png);
+    background-image: url(../../picture/task8/sprite-head.png);
     background-size: 9.62rem 1.93rem;
 }
 
-.img-partner1 {
+.img-p1 {
     height: 1.8rem;
     width: 2.15rem;
     background-position: 0 0;
 }
 
-.img-partner2 {
+.img-p2 {
     height: 1.8rem;
     width: 2.15rem;
     background-position: -2.31rem 0;
 }
 
-.img-partner3 {
+.img-p3 {
     height: 1.8rem;
     width: 2.15rem;
     background-position: -4.89rem 0;
 }
 
-.img-partner4 {
+.img-p4 {
     height: 1.8rem;
     width: 2.15rem;
     background-position: -7.36rem 0;
 }
 
-.img-partner5 {
+.img-p5 {
     height: 1.8rem;
     width: 2.15rem;
-    background-position: -1.9rem 0;
+    background-position: 0  -1.9rem;
 }
 
-.img-partner6 {
-    height: 1.8rem;
-    width: 2.15rem;
+.img-p6 {
+    height: 1.77rem;
+    width: 2.3rem;
     background-position: -2.29rem -1.92rem;
 }
 
 .img-x1 {
-    height: 1.3rem;
-    width: 1.3rem;
+    height: 0.13rem;
+    width: 0.13rem;
     background-position: 0 0;
 }
 
 .img-x2 {
-    height: 1.5rem;
-    width: 1.6rem;
+    height: 0.15rem;
+    width: 0.16rem;
     background-position: -0.2rem 0;
 }
 
 .img-x3 {
-    height: 2.4rem;
-    width: 2.5rem;
+    height: 0.24rem;
+    width: 0.25rem;
     background-position: -1.2rem 0;
 }
 
 .img-x4 {
-    height: 4.7rem;
-    width: 2.7rem;
+    height: 0.47rem;
+    width: 0.27rem;
     background-position: -0.46rem 0;
 }
 
 .img-x5 {
-    height: 4.6rem;
-    width: 2.7rem;
+    height: 0.46rem;
+    width: 0.27rem;
     background-position: -0.83rem 0;
 }
 
 .img-x6 {
-    height: 2.8rem;
-    width: 2.9rem;
+    height: 0.28rem;
+    width: 0.29rem;
     background-position: -1.56rem 0;
 }
 
 .img-x7 {
-    height: 2.8rem;
-    width: 2.9rem;
+    height: 0.28rem;
+    width: 0.29rem;
     background-position: -1.94rem 0;
 }
 
 .img-x8 {
-    height: 3rem;
-    width: 3.2rem;
+    height: 0.3rem;
+    width: 0.32rem;
     background-position: -2.34rem 0;
 }
 
 .img-x9 {
-    height: 6.2rem;
-    width: 4.3rem;
+    height: 0.62rem;
+    width: 0.43rem;
     background-position: -2.76rem 0;
 }
 
 .img-x10 {
-    height: 5.5rem;
-    width: 5.2rem;
+    height: 0.55rem;
+    width: 0.52rem;
     background-position: -3.27rem 0;
 }
 
 .img-x11 {
-    height: 5rem;
-    width: 6rem;
+    height: 0.5rem;
+    width: 0.6rem;
     background-position: -3.87rem 0;
 }
 
 .img-x12 {
-    height: 4.9rem;
+    height: 0.49rem;
     width: 1.07rem;
     background-position: -4.59rem 0;
 }
 
 .img-x13 {
-    height: 6rem;
-    width: 16rem;
+    height: 0.6rem;
+    width: 1.6rem;
     background-position: -5.74rem 0;
 }
 
-.im-h1 {
-    height: 1.3rem;
-    width: 1.3rem;
+.img-h1 {
+    height: 0.75rem;
+    width: 0.75rem;
     background-position: -4.29rem 0;
 }
 
-.im-h2 {
-    height: 1.3rem;
-    width: 1.3rem;
+.img-h2 {
+    height: 0.75rem;
+    width: 0.75rem;
     background-position: -3.43rem 0;
 }
 
-.im-h3 {
-    height: 1.3rem;
-    width: 1.3rem;
+.img-h3 {
+    height: 0.75rem;
+    width: 0.75rem;
     background-position: -5.11rem 0;
 }
 
-.im-h4 {
-    height: 1.3rem;
-    width: 1.3rem;
+.img-h4 {
+    height: 0.75rem;
+    width: 0.75rem;
     background-position: -6.01rem 0;
 }
 
-.im-h5 {
-    height: 1.3rem;
-    width: 1.3rem;
+.img-h5 {
+    height: 0.75rem;
+    width: 0.75rem;
     background-position: -0.85rem 0;
 }
 
-.im-h6 {
-    height: 1.3rem;
-    width: 1.3rem;
+.img-h6 {
+    height: 0.75rem;
+    width: 0.75rem;
     background-position: 0 0;
 }
 
-.im-h7 {
-    height: 1.3rem;
-    width: 1.3rem;
+.img-h7 {
+    height: 0.75rem;
+    width: 0.75rem;
     background-position: -2.6rem 0;
 }
 
-.im-h8 {
-    height: 1.3rem;
-    width: 1.3rem;
+.img-h8 {
+    height: 0.75rem;
+    width: 0.75rem;
     background-position: -1.71rem 0;
 }
 
-.im-h9 {
-    height: 1.3rem;
-    width: 1.3rem;
+.img-h9 {
+    height: 0.92rem;
+    width: 0.92rem;
     background-position: -6.92rem 0;
 }
 
-.im-h10 {
-    height: 1.3rem;
-    width: 1.3rem;
+.img-h10 {
+    height: 1.08rem;
+    width: 1.08rem;
     background-position: 0 -0.85rem;
 }
 
-.im-h11 {
-    height: 1.3rem;
-    width: 1.3rem;
+.img-h11 {
+    height: 1.08rem;
+    width: 1.08rem;
     background-position: -1.17rem -8.5rem;
 }
 
-.im-h12 {
-    height: 1.3rem;
-    width: 1.3rem;
+.img-h12 {
+    height: 1.08rem;
+    width: 1.08rem;
     background-position: -2.39rem -0.84rem;
 }
 
-.im-h13 {
-    height: 1.3rem;
-    width: 1.3rem;
+.img-h13 {
+    height: 1.08rem;
+    width: 1.08rem;
     background-position: -3.64rem -0.84rem;
 }
 
-.im-h14 {
-    height: 1.3rem;
-    width: 1.3rem;
+.img-h14 {
+    height: 1.53rem;
+    width: 1.56rem;
     background-position: -8.06rem 0;
 }
 
@@ -256,41 +271,85 @@ button:focus {
 .wwhite{
     color: #dadada;
 }
-
-
-
-@media screen and (min-width: 360px) and (max-width: 374px) and (orientation: portrait) {
-    html {
-        font-size: 703%;
-    }
+.wwhite1{
+    color: #fff;
+}
+.border-color1{
+    border-top: 1px solid #32c086;
 }
 
-@media screen and (min-width: 375px) and (max-width: 383px) and (orientation: portrait) {
-    html {
-        font-size: 732.4%;
-    }
+.h-left{
+    float: left;
+    margin-left: 19%;
+}
+.h-right{
+    float: right;
+    margin-right: 19%;
+}
+.in-block{
+    display: inline-block;
+    vertical-align: middle;
+
 }
 
-@media screen and (min-width: 384px) and (max-width: 399px) and (orientation: portrait) {
-    html {
-        font-size: 750%;
-    }
+
+.h1-size{
+    height: 0.4rem;
+    line-height: 0.4rem;
+    background-color: #fff;
+    color: #29b078;
+}
+.h2-size{
+    margin-right: -0.4rem;
+    height: 1rem;
+    line-height: 1rem;
+    background-color: #29b078;
+
+}
+.nav-top{
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    text-align: center;
+    color: #fff;
+}
+.f-left{
+    float: left;
+    margin-left: 19%;
+}
+.f-right{
+    float: right;
+    margin-right: 20%;
+}
+.f-center{
+    float: left;
+    margin-left: 7.6%;
+}
+.f1-size{
+    height: 1.7rem;
+    line-height: 1.7rem;
+    background-color:#29b078;
+    color: #fff;
+}
+.nav-bottom{
+    display: inline-block;
+    margin-left: 19%;
 }
 
-@media screen and (min-width: 400px) and (max-width: 413px) and (orientation: portrait) {
-    html {
-        font-size: 781.25%;
-    }
+.record{
+    display: table;
+    margin: 0 auto;
+
+}
+.pad-tb {
+    padding: 20px 0;
 }
 
-@media screen and (min-width: 414px) and (max-width: 431px) and (orientation: portrait) {
-    html {
-        font-size: 808.6%;
-    }
+.in-block2{
+    display:inline-block;
+    vertical-align:middle;
+    line-height:300px;
 }
 
-@media screen and (min-width: 432px) and (max-width: 479px) and (orientation: portrait) {
-    html {
-        font-size: 843.75%;
-    }
-}
+.par-mian
+
