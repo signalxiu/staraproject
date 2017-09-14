@@ -1,9 +1,10 @@
-html {
+html{
     font-size: 625%; /*100 ÷ 16 × 100% = 625%*/
-    font-family: Tahoma, sans-serif;
+
 }
 
 body{
+    font-family:'Microsoft YaHei', sans-serif;
     background-color: #fafafa;
 }
 ul,
@@ -12,6 +13,9 @@ button {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+a{
+    cursor: pointer;
 }
 
 button {
@@ -28,6 +32,9 @@ header nav a:hover{
     color: #fff;
     border-bottom: 3px solid #fff;
 
+}
+footer nav a{
+    color: #fff;
 }
 footer nav a:hover{
 
@@ -49,7 +56,7 @@ footer nav a:hover{
 
 .img-h {
     background-image: url(../../picture/task8/sprite-head.png);
-    background-size: 9.62rem 1.93rem;
+    background-size: 9.62rem auto;
 }
 .img-p-background{
     padding-top:20.58%;
@@ -254,6 +261,8 @@ footer nav a:hover{
     height: 1.53rem;
     width: 1.56rem;
     background-position: -8.06rem 0;
+    background-image: url(../../picture/task8/sprite-head.png);
+    background-size: 9.62rem auto;
 }
 
 .cgreen{
@@ -294,37 +303,22 @@ footer nav a:hover{
     font-size: medium;
 }
 .border-color3{
-    border-bottom:1px solid #eeeded;
-    margin: 0 -15px
+    border-bottom: 1px solid #eeeded;
 }
-.h-left{
-    float: left;
-    margin-left: 19%;
-}
-.h-right{
-    float: right;
-    margin-right: 19%;
-}
-
-
-.in-block{
-    display: inline-block;
-    vertical-align: middle;
-
-}
-
-
-.h1-size{
-    height: 0.4rem;
+.border-table{
+    border-top: 1px solid #eeeded;
     line-height: 0.4rem;
-    background-color: #fff;
+}
+
+
+.h-size{
+
+    line-height: 0.4rem;
     color: #29b078;
 }
-.h2-size{
-    margin-right: -0.4rem;
-    height: 1rem;
+.h-size2{
+
     line-height: 1rem;
-    background-color: #29b078;
 
 }
 .nav-top{
@@ -334,23 +328,11 @@ footer nav a:hover{
     text-align: center;
     color: #fff;
 }
-.f-left{
-    float: left;
-    margin-left: 19%;
-}
-.f-right{
-    float: right;
-    margin-right: 20%;
-}
-.f-center{
-    float: left;
-    margin-left: 7.6%;
-}
+
 .f1-size{
-    height: 1.7rem;
-    line-height: 1.7rem;
-    background-color: #29b078;
-    color: #fff;
+    padding-top: 0.3rem;
+    padding-bottom: 0.15rem;
+
 }
 .nav-bottom{
     display: inline-block;
@@ -362,13 +344,6 @@ footer nav a:hover{
     margin: 0 auto;
     padding: 3px 0;
     font-size: x-small;
-}
-
-
-
-
-.box{
-    width: 3rem;
 }
 
 .inline-block{
@@ -397,6 +372,10 @@ footer nav a:hover{
 .main-max2{
     max-width: 13rem;
     margin: 0.8rem auto 2.3rem auto;
+}
+.main-max3{
+    max-width: 13rem;
+    margin: 0 auto 2.3rem auto;
 }
 
 .dot {
@@ -439,6 +418,21 @@ footer nav a:hover{
     margin-top: -0.5rem;
     margin-bottom: 0.3rem;
 }
+.position-main-top{
+    padding: 0.3rem 0;
+    border-bottom:1px solid #d0d6d9;
+    font-weight: 800;
+}
+.position-main-top2{
+    padding: 0.2rem 0;
+    border-bottom:1px solid #edf1f2;
+    font-size: small;
+}
+.position-main-top3{
+    padding: 0.3rem 0;
+    border-bottom:1px solid #d0d6d9;
+    font-weight: 800;
+}
 
 .partner-main-left{
     text-align: left;
@@ -453,12 +447,95 @@ footer nav a:hover{
     margin: 0.1rem 0;
     color: #29b078;
 }
+.partner-left-bottom{
+    margin-bottom: 1rem;
+}
 
 .partner-right-font{
-    margin: 0.3rem 0.5rem 1.8rem 0.5rem;
-    line-height: 0.25rem
+    padding: 0.3rem 0.5rem 1.8rem 0.5rem;
+    line-height: 0.25rem;
+}
+.partner-right-top{
+    padding: 0.3rem 0.5rem 0.3rem 0.15rem;
+    line-height: 0.25rem;
+}
+
+@media (min-width: 768px) {
+    .partner-right-top {
+        padding: 0.3rem 0.65rem;
+        line-height: 0.25rem;
+    }
 }
 
 .partner-left-p{
     margin: 0 0 0.3rem;
+}
+
+
+.box{
+    height: 4.4rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: small;
+    border: 1px solid #eeeded;
+    box-shadow:1px 1px 1px #eeeded;
+    background-color: #fff;
+}
+
+.box2{
+    height: 4.4rem;
+    margin: 0.5rem 0.15rem 0.5rem 0;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: small;
+    border: 1px solid #eeeded;
+    box-shadow:1px 1px 1px #eeeded;
+    background-color: #fff;
+
+}
+
+.word-break{
+    word-break: break-all;
+}
+
+.floater{
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: all  0.8s ease;
+    background-color: rgba(0,0,0,0);
+    color: #ffffff;
+}
+
+.floater2{
+    position: relative;
+    top: 10%;
+}
+
+.aaaa{
+    opacity: 1;
+    transition: all  0.8s ease;
+    background-color: rgba(0,0,0,1);
+}
+.floater:hover{
+    opacity: 1;
+    background-color: rgba(0,0,0,0.6);
+}
+
+@media (max-width: 1200px){
+    html{
+        font-size: 530%; /*100 ÷ 16 × 100% = 625%*/
+    }
+}
+@media (max-width: 992px){
+    html{
+        font-size: 620%; /*100 ÷ 16 × 100% = 625%*/
+    }
+}
+
+@media (max-width: 768px){
+    html{
+        font-size: 300%; /*100 ÷ 16 × 100% = 625%*/
+    }
 }
