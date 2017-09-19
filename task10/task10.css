@@ -22,6 +22,7 @@ a, a:hover{
     height: 0.24rem;
     width: 0.19rem;
     background-position: -0.28rem 0;
+
 }
 .icon-white{
     height: 0.22rem;
@@ -160,7 +161,30 @@ a, a:hover{
     background-color: #fff;
 }
 
-.btn:hover{
+
+.border-bottom{
+    border-bottom:1px solid #ddd;
+}
+
+.wrap-border{
+    border: 1px solid #ddd;
+
+}
+
+.project-heigh{
+    line-height: 0.4rem;
+}
+.project-heigh2{
+    line-height: 2.8rem;
+    text-align: center;
+}
+.next{
+    width: 1.8rem;
+    height: 0.45rem;
+    font-size: large;
+}
+
+header .btn:hover{
     color: #fff;
     background-color: #06f;
 }
@@ -174,3 +198,23 @@ a, a:hover{
     color: #fff;
 }
 
+.display-none{
+    display: none;
+}
+.input-width{
+    width: 1rem;
+    text-indent: 0.4rem;
+}
+.input-width2{
+    width: 0.7rem;
+
+}
+
+
+input[type='radio'] {
+    display:none;
+}
+
+.checked {
+    background-position:  0 -0.9rem;
+}
