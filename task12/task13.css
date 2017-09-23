@@ -1,4 +1,22 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+html {
+  font-size: 10px;
+  width: 100%;
+  height: 100%;
+  /*让背景图片100%适应整个屏幕*/ }
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer; }
+
 .img, .img1, .img2, .img3, .img4, .img5, .img6, .img7 {
   background-image: url(../../css/picture/task12/sprite6.png);
   background-size: 24.5rem 5.875rem; }
@@ -38,29 +56,31 @@
   width: 2.625rem;
   background-position: -21.875rem 0; }
 
-.inline-block {
+.inblock, .inline-block, .main-row-a, .service, .date, .sign, .time, .address, .address-img, .footer-nav, .dropdown {
   display: inline-block; }
 
 .top {
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
-  height: 120px; }
+  bottom: auto;
+  left: 0;
+  height: 113.2px; }
 
 .main {
   position: absolute;
-  overflow: auto;
-  left: 0;
+  top: 113.2px;
   right: 0;
-  top: 120px;
-  bottom: 60px; }
+  bottom: 60px;
+  left: 0;
+  overflow: auto; }
 
 .bottom {
   position: absolute;
-  left: 0;
+  top: auto;
   right: 0;
   bottom: 0;
+  left: 0;
   height: 60px; }
 
 .nav-top {
@@ -73,7 +93,7 @@
 
 .employer {
   color: #fff;
-  background-color: #099;
+  background-color: #297983;
   padding: 1rem 2rem;
   margin-right: -3px;
   font-size: 1.5rem;
@@ -93,19 +113,14 @@
   background-color: #5fc0cd; }
 
 .option {
-  text-align: center;
   padding: 2rem 0;
   border: 1px solid #ddd; }
 
 .main-row-a {
-  margin-left: 10px;
-  display: inline-block;
-  vertical-align: middle; }
+  margin-left: 10px; }
 
 .service {
-  color: #bbb;
-  display: inline-block;
-  vertical-align: middle; }
+  color: #bbb; }
 
 .date {
   width: 40%;
@@ -115,20 +130,14 @@
   text-overflow: ellipsis;
   /*文本溢出省略号*/
   white-space: nowrap;
-  /*不换行*/
-  display: inline-block;
-  vertical-align: middle; }
+  /*不换行*/ }
 
 .sign {
   margin-right: 40px;
   float: right;
-  display: inline-block;
-  vertical-align: middle;
   cursor: pointer; }
 
 .time {
-  display: inline-block;
-  vertical-align: middle;
   width: 15%;
   float: right;
   color: #f00; }
@@ -137,44 +146,19 @@
   clear: both; }
 
 .address {
-  display: inline-block;
-  vertical-align: middle;
   color: #bbb; }
 
 .address-img {
-  display: inline-block;
-  vertical-align: middle;
   margin-left: 10px; }
 
 .footer-nav {
-  display: inline-block;
-  vertical-align: middle;
   margin: auto 40px; }
 
 .homepage {
-  text-align: center;
   color: #5fc0cd; }
 
 .my {
-  text-align: center;
   color: #bbb; }
-
-* {
-  margin: 0;
-  padding: 0; }
-
-html {
-  font-size: 10px;
-  width: 100%;
-  height: 100%;
-  /*让背景图片100%适应整个屏幕*/ }
-
-ul,
-li {
-  list-style: none; }
-
-button {
-  border: none; }
 
 .mright1 {
   display: flex;
@@ -202,84 +186,35 @@ button {
   justify-content: center;
   background-color: #f8f8f8; }
 
-.my-hand {
-  cursor: pointer; }
-
-.margin-left {
-  margin-left: 10px; }
-
-.margin-left2 {
-  margin-left: 20px; }
-
-.padding-top {
-  padding-top: 5px;
-  padding-bottom: 5px; }
-
-.overflow-ellipsis {
-  overflow: hidden;
-  /*溢出隐藏*/
-  text-overflow: ellipsis;
-  /*文本溢出省略号*/
-  white-space: nowrap;
-  /*不换行*/ }
-
 .bgray {
   background-color: #f8f8f8; }
 
-.colorf0d {
-  background-color: #5fc0cd; }
-
-.colorfff {
-  background-color: #fff; }
-
-.color099 {
-  background-color: #2f8b97; }
-
-.fff {
-  color: #fff; }
-
-.f0d {
-  color: #5fc0cd; }
-
-.bbb {
-  color: #bbb; }
-
-.f00 {
-  color: #f00; }
-
-.inline-block {
-  display: inline-block;
+.inline-block, .main-row-a, .service, .date, .sign, .time, .address, .address-img, .footer-nav {
   vertical-align: middle; }
 
 .dropdown {
   position: relative;
-  display: inline-block;
   width: 33.33%;
   font-size: 16px;
   color: #bbb; }
+  .dropdown:hover .dropdown-content {
+    display: block; }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  text-align: center;
   z-index: 10;
   background-color: #f9f9f9;
-  width: 100%;
-  border: 1px solid #ddd; }
+  width: 100%; }
+  .dropdown-content a {
+    color: gray;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; }
+    .dropdown-content a:hover {
+      background-color: #f1f1f1; }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block; }
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1; }
-
-.dropdown:hover .dropdown-content {
-  display: block; }
-
-.text-center {
+.t-center, .option, .homepage, .my, .dropdown-content {
   text-align: center; }
 
 /*# sourceMappingURL=task13.css.map */
