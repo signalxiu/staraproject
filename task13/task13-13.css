@@ -45,7 +45,7 @@ a:hover {
   color: #fff; }
 
 .img, .img-one1, .img-one2, .img-one3, .img-two1, .img-two2, .img-two3, .img-two4, .img-two6, .img-two7, .img-two8, .img-thr1, .img-thr2 {
-  background-image: url(../../picture/task7/sprite7.png);
+  background-image: url(sprite7.png);
   background-size: 61.875rem 12.8125rem; }
 
 .img-one1 {
@@ -111,7 +111,7 @@ a:hover {
 .img-thr3 {
   height: 12.8125rem;
   width: 21.9375rem;
-  background-image: url(../../picture/task7/win.png);
+  background-image: url(win.png);
   background-size: 21.9375rem 12.8125rem; }
 
 .l-result {
