@@ -8,13 +8,12 @@ $fc7: #f5c97b;
 $green: #83b09a;
 $f66: #f66e6e;
 
-@mixin bc($bc:$ddd){
+@mixin bc($bc){
   background-color: $bc;
 }
-@mixin cl($cl:$fff){
-  color: $fff;
+@mixin cl($cl){
+  color: $cl;
 }
-
 
 @mixin bpxy($bpx:0, $bpy:0, $bph:2.5rem, $bpw:1.5rem){
   background-position: $bpx $bpy;
@@ -22,7 +21,11 @@ $f66: #f66e6e;
   width: $bpw;
 }
 
-
+@mixin fcc ($dl:flex, $xct:center, $yct:center){
+    display: $dl;
+    justify-content: $xct;
+    align-items: $yct;
+}
 
 .cblue1 {
   background-color: #29bde0;
@@ -32,32 +35,33 @@ $f66: #f66e6e;
   background-color: #fbb435;
 }
 
-.corange2 {
-  background-color: #f5c97b;
-}
-
-.cgreen1 {
-  background-color: #83b09a;
-}
-
 .cred {
   background-color: #f66e6e;
 }
-
 .cwhite {
   background-color: #fff;
 }
 
-.worange {
-  color: #fbb435;
-}
 
-.wwhite {
+.bcfff {
   color: #fff;
 }
 
-.wgray {
+.bc999 {
   color: #999;
+}
+
+.bc000{
+  color: #000;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 14px;
+  margin:0;
 }
 
 ul,
@@ -70,21 +74,17 @@ button {
 
 button {
   border: none;
-}
-
-button:focus {
-  outline: none;
+  &:focus {
+    outline: none;
+  }
 }
 
 a,
 a:hover {
   display: block;
   text-decoration: none;
-  outline: none;
   color: #fff;
 }
-
-
 
 .img {
   background-image: url(../../picture/task7/sprite7.png);
@@ -158,20 +158,42 @@ a:hover {
   background-size: 21.9375rem 12.8125rem;
 }
 
-.header {
+.l-result{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.float-r{
+  float: right;
+}
+
+
+.top{
+  position: fixed;
+  top:0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.bottom{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.header {
+  @include fcc($xct:space-between);
   height: 5rem;
   padding: 0.625rem;
   border-bottom: 1px solid #ddd;
   @include bc($blue);
 }
 
-.header-thr {
-  border-bottom: 0.1rem solid #fff;
-}
 
 .main {
   position: absolute;
@@ -179,6 +201,8 @@ a:hover {
   right: 0;
   bottom: 9rem;
   left: 0;
+  margin: 0 auto;
+
 }
 .main-home {
   position: absolute;
@@ -186,29 +210,16 @@ a:hover {
   right: 1rem;
   bottom: 2rem;
   left: 1rem;
-  @include bc($bc:$ddd);
+  @include bc($ddd);
 }
 
-.main-one {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.main-thr {
-
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 9rem;
-  overflow: auto;
-}
-
-.main-thr-result {
+.result {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  padding-top: 5rem;
   right: 0;
   left: 0;
   width: 100%;
@@ -216,25 +227,11 @@ a:hover {
 
 }
 
-.main-thr-eday {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  top: 5rem;
-  right: 0;
-  left: 0;
-}
 
-.footer-one {
-  background: rgba(0, 0, 0, .5);
-  height: 7.75rem;
-}
+
 
 .footer-two {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include fcc;
   font-size: x-large;
   border-top: 0.1rem solid #ddd;
   @include bc($blue);
@@ -249,15 +246,11 @@ a:hover {
 }
 
 .footer-thr {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include fcc;
   background: rgba(48, 189, 224, .5);
-  @include cl($blue);
-
 }
 
-.footer-thr-vote {
+.thr-vote {
   height: 5rem;
   width: 17rem;
   margin: 2rem 1.5rem;
@@ -281,53 +274,55 @@ a:hover {
 
 
 .dot-array {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  margin-top: -1px;
+  @include fcc($yct:flex-end);
+  @include bc(#fff);
+}
+
+.text-center{
+  text-align: center;
 }
 
 .jump {
   position: absolute;
-  top: 33rem;
+  top: 32rem;
   right: 0;
 }
 
 .jump-gray {
   position: absolute;
-  top: 4rem;
+  top: 3rem;
   right: 0;
 }
 
 .edition {
   margin: 2rem;
   line-height: 8.5rem;
-  height: 8.5rem;
   @include bc($blue);
-  @include cl(#fff);
-  @extend .cursor;
+  @include cl($fff);
+  cursor: pointer;
 }
 
 .lastgame {
-  height: 6.25rem;
   line-height: 6.25rem;
+  @include bc($fff);
 }
 
 .game {
-  margin-top: 10px;
-  height: 5rem;
+
   line-height: 5rem;
   border-bottom: 0.0625rem solid #fbb435;
+  @include cl($fb3);
 }
 
-.padgame {
-  padding: 0.58rem 0;
+
+.inline-block{
+  display: inline-block;
 }
+
+
 
 .two-speak {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include fcc($xct:space-between);
   position: absolute;
   top: 5rem;
   right: 0;
@@ -341,81 +336,65 @@ a:hover {
 .two-main {
   position: relative;
   top: 10rem;
-  @include cl($blue);
+  padding-right: 15px;
+  padding-left: 15px;
+  width:100%;
 
 }
 .two-main-move{
   position: relative;
   height: 57.4rem;
-
+  margin-right: -15px;
+  margin-left: -15px;
   overflow: auto;
+}
+.dropdown{
+  position: relative;
+  float: left;
+  width: 33.33%;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .tow-box {
+  display: block;
   width: 8rem;
   height: 8rem;
+  margin: 0 auto;
   padding: 0.3rem;
+  @include bc($fff);
+  cursor: pointer;
 
-}
-
-.two-box-out {
-  width: 8.6rem;
-  height: 13rem;
 }
 
 .two-orange {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include fcc;
   height: 5.3rem;
   @include bc($fc7)
 }
 
-.two-green {
-  height: 2.1rem;
-}
 
-.two-name {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.two-green {
+  @include fcc;
+  height: 2.1rem;
+  @include cl($fff);
+  @include bc($green);
 }
 
 .two-choice {
-  display: flex;
-  justify-content: center;
+  @include fcc;
   padding: 1rem 0;
+  opacity: 0;
 }
 
-.two-choice-row {
-  position: relative;
-  top: 15.5rem;
-  right: 0;
-  left: 0;
-  bottom: 9rem;
-  overflow: auto;
-  width: 100vh;
-}
 
-.img,
-a {
-  cursor: pointer;
-}
-.cursor{
-  cursor: pointer;
-}
-
-.dropdown-content a {
-
+.two-choice a {
   cursor: pointer;
   margin: 0.1rem;
 }
 
-.dropdown-content {
-  opacity: 0;
-}
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .two-choice {
   opacity: 1;
 }
 
@@ -427,96 +406,79 @@ a {
   border-left: 0.5rem solid transparent;
 }
 
-.pad-triangle {
-
+.p-triangle {
+  @include cl($fff);
   padding-top: 0.5rem;
   padding-bottom: 2rem;
 }
 
-.thr-font-row1 {
+.thr-row1 {
   padding: 1rem 1.5rem 3rem 1.5rem;
-
+  font-weight: 600;
+  @include cl($fb3);
 }
 
-.thr-font-row2 {
-  padding-top: 0.5rem;
+.thr-row2 {
+  padding: 0.5rem 0;
   letter-spacing: 0.2rem;
 }
 
-.thr-font-row3 {
+.thr-row3 {
   padding-top: 0.5rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   letter-spacing: 0.2rem;
   border-top: 1px solid #ddd;
-
 }
 
-.thr-font-row4 {
-  padding-top: .5rem;
+.thr-width{
+  display: inline-block;
+  width: 32%;
 }
 
-.thr-font-result1 {
-  padding-top: 5rem;
+.pt1 {
+  padding-top: 1rem;
 }
 
-.thr-font-result2 {
-  padding-bottom: 1rem;
-}
-.thr-font-footer{
+.pb9{
   padding-bottom: 9rem;
 }
 
-.fonts-large {
+.fl{
   font-size: large;
 }
 
-.fonts-small {
-  font-size: small;
-}
-
-.border-fff {
-  border: 1px solid #fff;
-}
-.border-b-fff {
-  border-bottom: 1px solid #ddd;
-}
-.wh{
-  height: 5rem;
+.lh5{
   line-height: 5rem;
 }
 .margin-b{
   margin-bottom: 0;
 }
 
-
-@media screen and (max-height: 600px){
-  .main-home{
-    position: absolute;
-    top: 5rem;
-    right: 1rem;
-    bottom: 2rem;
-    left: 1rem;
-  }
-  .edition {
-    margin: 2rem;
-    line-height: 5.5rem;
-    height: 5.5rem;
-  }
-  .jump{
-    position: absolute;
-    top: 28rem;
-    right: 0;
-  }
-}
-@media screen and (max-width: 340px){
+@media screen and (min-width: 1024px) {
   html{
-    font-size:50%;
+    font-size:120%;
+  }
+  body{
+    position: relative;
+    max-width: 768px;
+    margin: auto;
   }
   .jump {
-    position: absolute;
-    top: 28.5rem;
-    right: 0;
+    top: 31.5rem;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  html{
+    font-size:65%;
+  }
+  .jump {
+    top: 32rem;
+  }
+  .jump-gray {
+    top: 3.5rem;
   }
 }
 
@@ -525,38 +487,27 @@ a {
     font-size:100%;
   }
 }
-@media screen and (min-width: 768px) {
-  html{
-    font-size:90%;
+
+
+@media screen and (max-width: 600px){
+  .edition {
+    line-height: 5.5rem;
   }
-  .jump {
-    position: absolute;
-    top: 31.5rem;
-    right: 0;
-  }
-  .jump-gray {
-    position: absolute;
-    top: 3.5rem;
-    right: 0;
+  .jump{
+    top: 28rem;
   }
 }
-@media screen and (min-width: 1024px) {
-  html{
-    font-size:120%;
-  }
-  body{
-    position: relative;
 
-    max-width: 768px;
-    margin: auto;
+
+@media screen and (max-width: 340px){
+  html{
+    font-size:50%;
   }
   .jump {
-    position: absolute;
-    top: 30.5rem;
-    right: 0;
+    top: 28.5rem;
   }
-
 }
+
 
 
 
