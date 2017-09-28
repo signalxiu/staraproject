@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 625%;
+  /*100 ÷ 16 × 100% = 625%*/ }
+
+body {
+  font-size: 14px;
+  margin: 0;
+  font-family: 'Microsoft YaHei', sans-serif;
+  background-color: #fafafa; }
+
+a {
+  cursor: pointer; }
+
+button {
+  border: none; }
+button:focus {
+  outline: none; }
