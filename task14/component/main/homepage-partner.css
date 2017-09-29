@@ -145,5 +145,80 @@ h3 {
 
   .main-max3 {
     margin: 0 auto 0.5rem auto; } }
+.cgreen {
+  background-color: #29b078; }
 
-/*# sourceMappingURL=global.css.map */
+.corange {
+  background-color: #f9a372; }
+
+.cwhite {
+  background-color: #fff; }
+
+.cwhite1 {
+  background-color: #fafafa; }
+
+.wgreen {
+  color: #29b078; }
+
+.worange {
+  color: #f9a372; }
+
+.wred {
+  color: #f00; }
+
+.wwhite {
+  color: #dadada; }
+
+.wwhite1 {
+  color: #fff; }
+
+.wwhite2 {
+  color: #a8a8a8; }
+
+.wwhite3 {
+  color: #a8a8a8; }
+
+.img-p, .img-p1, .img-p2, .img-p3, .img-p4, .img-p5 {
+  background-image: url(sprite-partner.png);
+  background-size: 9.51rem 3.7rem; }
+
+.img-p1 {
+  background-position: 0 0;
+  height: 1.8rem;
+  width: 2.15rem; }
+
+.img-p2 {
+  background-position: -2.31rem 0;
+  height: 1.8rem;
+  width: 2.15rem; }
+
+.img-p3 {
+  background-position: -4.89rem 0;
+  height: 1.8rem;
+  width: 2.15rem; }
+
+.img-p4 {
+  background-position: -7.36rem 0;
+  height: 1.8rem;
+  width: 2.15rem; }
+
+.img-p5 {
+  background-position: 0 -1.9rem;
+  height: 1.8rem;
+  width: 2.15rem; }
+
+.partner-border2:hover {
+  background-color: #fff;
+  border: 1px solid #eeeded;
+  box-shadow: 0 0 10px #eeeded;
+  border-radius: 5px;
+  font-weight: 500; }
+
+.letter-space {
+  text-align: center;
+  letter-spacing: -0.05rem; }
+
+.home-h4 {
+  margin: 0.6rem auto; }
+
+/*# sourceMappingURL=homepage-partner.css.map */
