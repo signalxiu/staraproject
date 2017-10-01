@@ -1,10 +1,24 @@
 @import "../global-style/global";
 @import "../color/color";
-
+/*头部*/
 @mixin bpxy($bpx:-1.2rem, $bpy:0, $bph:0.24rem, $bpw:0.25rem){
   background-position: $bpx $bpy;
   height: $bph;
   width: $bpw;
+}
+.img-x6 {
+  @extend .img-x;
+  @include bpxy($bpx:-1.56rem, $bph:0.28rem, $bpw:0.29rem);
+}
+
+.img-x7 {
+  @extend .img-x;
+  @include bpxy($bpx:-1.94rem, $bph:0.28rem, $bpw:0.29rem);
+}
+
+.img-x12 {
+  @extend .img-x;
+  @include bpxy($bpx:-4.56rem, $bph:0.49rem, $bpw:1.1rem);
 }
 .container {
   padding-right: 15px;
@@ -51,20 +65,7 @@ header nav .nav-change1 a:hover{
   @include bpxy;
 }
 
-.img-x6 {
-  @extend .img-x;
-  @include bpxy($bpx:-1.56rem, $bph:0.28rem, $bpw:0.29rem);
-}
 
-.img-x7 {
-  @extend .img-x;
-  @include bpxy($bpx:-1.94rem, $bph:0.28rem, $bpw:0.29rem);
-}
-
-.img-x12 {
-  @extend .img-x;
-  @include bpxy($bpx:-4.56rem, $bph:0.49rem, $bpw:1.1rem);
-}
 
 .inline-block {
   display: inline-block;
@@ -226,4 +227,4 @@ header nav .nav-top2 a:hover {
     display: none;
   }
 }
-
+/*头部*/

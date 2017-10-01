@@ -1,5 +1,7 @@
 @import "../global-style/global";
 @import "../color/color";
+
+/*宣传语*/
 @mixin bpxy($bpx:-2.76rem, $bpy:0, $bph:0.62rem, $bpw:0.43rem){
   background-position: $bpx $bpy;
   height: $bph;
@@ -64,3 +66,4 @@
     text-align: center;
   }
 }
+/*宣传语*/

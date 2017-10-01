@@ -1,5 +1,7 @@
 @import "../global-style/global";
 @import "../color/color";
+
+/*合作伙伴展示*/
 @mixin bpxy($bpx:0, $bpy:0, $bph:1.8rem, $bpw:2.15rem){
   background-position: $bpx $bpy;
   height: $bph;
@@ -49,3 +51,4 @@
 .home-h4 {
   margin: 0.6rem auto;
 }
+/*合作伙伴展示*/

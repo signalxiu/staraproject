@@ -1,6 +1,6 @@
 @import "../global-style/global";
 @import "../color/color";
-
+/*底部区域*/
 @mixin bpxy($bpx:-1.2rem, $bpy:0, $bph:0.24rem, $bpw:0.25rem){
   background-position: $bpx $bpy;
   height: $bph;
@@ -41,3 +41,4 @@ footer nav a:hover {
   color: #fff;
   text-decoration: underline;
 }
+/*底部区域*/
