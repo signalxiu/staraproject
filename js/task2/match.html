@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/match.css">
+    <link rel="stylesheet" href="../../css/style/task4/loginpage.css">
+
+</head>
+<body>
+<header class=" g-top">
+    <div class="g-fleft">
+        <img class="s-img1" src="img/back.png">
+    </div>
+    <div class=" m-header">参数设置</div>
+    <div class="g-fright">
+        <img class="s-img2" src="img/help.png">
+    </div>
+</header>
+<main class="g-main">
+<div class="m-num m-mun1">
+    <div class="m-match-word g-inlineb">玩家配比</div>
+    <div  class="main-right">
+        <div class="abnum"></div>
+        <div class="click" id="change">点击设置</div>
+    </div>
+
+</div>
+<div class="m-word">
+    <input class="m-word-icon" placeholder="水民词组" onkeydown='if(event.keyCode==8){this.value=""}'/>
+    <input class="m-word-icon" placeholder="幽灵词组" onkeydown='if(event.keyCode==8){this.value=""}'>
+</div>
+<div class="m-num ">
+    <div  class="u-padding">
+        玩家人数<input type="text"  class="slider-num" id="num" min="4" max="18" value="4" onblur="num_change()">人
+    </div>
+    <div style="padding: 0.4rem;text-align: center">
+        <button class="minus g-inlineb" onclick="minus_id()"></button>
+        <input type="range" class="slider_icon" id="icon" min="4" max="18" value="4" onchange="icon_change()">
+        <button class="plus " onclick="plus_id()"></button>
+    </div>
+</div>
+
+    <button class="m-footer ">去发牌</button>
+
+</main>
+
+</body>
+<script src="jquery-1.10.2.js"></script>
+<script src="match.js"></script>
+
+</html>
