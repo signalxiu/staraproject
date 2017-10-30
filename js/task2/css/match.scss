@@ -1,5 +1,5 @@
 html{
-  font-size: 625%;
+  font-size: 700%;
 }
 body{
   font-size: 0.2rem;
@@ -12,9 +12,11 @@ button{
 
 .g-fleft{
   float: left;
+  margin-left: 0.1rem;
 }
 .g-fright{
   float: right;
+  margin-right: 0.1rem;
 }
 
 .g-inlineb{
@@ -35,17 +37,20 @@ button{
   right: 0;
   bottom: 0;
   left:0;
-  max-width: 10rem;
+  max-width: 5.5rem;
   margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 5px;
+  padding-left: 5px;
 
 }
 
 .s-img1{
   width: 0.15rem;
   @extend .g-inlineb;
-
+}
+.s-img2{
+  width: 0.3rem;
+  @extend .g-inlineb;
 }
 .s-img2{
   width: 0.3rem;
@@ -62,6 +67,7 @@ button{
   margin: 0 auto;
   background-color: orange;
   color: #fff;
+  font-size: 0.18rem;
 }
 
 .m-word{
@@ -80,7 +86,7 @@ button{
   border-bottom: 1px solid lightgray;
   color: #000;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 0.2rem;
 }
 
 .m-num{
@@ -89,12 +95,14 @@ button{
 }
 .m-mun1{
   display: flex;
-  height: 2rem;
+  height: 2.3rem;
 }
 .main-right{
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
+  border-left: 1px solid lightgray;
 }
 
 .m-num-change{
@@ -104,14 +112,19 @@ button{
 }
 
 .m-match-word{
-
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
   color: #000;
   width: 0.2rem;
   padding: 0.4rem 0.2rem;
-  border-right: 1px solid lightgray;
 }
 
 .u-padding{
+  margin: 0.05rem 0 0 0.4rem;
   padding: 0.1rem 0.1rem;
 }
 
@@ -130,7 +143,8 @@ button{
   @extend .top;
   text-align: center;
   line-height: 0.5rem;
-
+  max-width: 5.5rem;
+  margin: 0 auto;
   color: #fff;
   background-color: #29bde0;}
 
@@ -156,10 +170,13 @@ button{
 
 input[type="text"] {
   display: inline-block;
-  width: 3em;
   text-align: center;
+  width: 0.3rem;
+  margin: 0.1rem;
+  font-size: 0.2rem;
+  outline: none;
   border: none;
-  font-size: 16px;
+  background: lightgray;
   }
 
 .slider_icon{
@@ -207,32 +224,97 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .block1{
-  margin: 0.3rem;
+  margin: 0.2rem;
   width: 0.1rem;
   height: 0.1rem;
   background: orange;
 }
 .block2{
-  margin: 0.3rem;
+  margin: 0.2rem;
   width: 0.1rem;
   height: 0.1rem;
   background: lightblue;
 }
 
 .row{
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.4rem;
   width: 50%;
 }
 .abnum{
-  height: 1.5rem;
-  overflow: auto;
+  position: absolute;
+  top: 0;
+  bottom: 45px;
   display: flex;
   flex-wrap: wrap;
+  overflow: auto;
+  font-size: 0.15rem;
 
 }
 .click{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,0);
   padding: 0.1rem;
   border-top:1px solid #fafafa ;
-  text-align: center;
+  cursor: pointer;
   color: lightblue;
+
 }
+
+.s-pad{
+  padding: 0.4rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 425px){
+  .block1{
+    margin: 0.1rem;
+  }
+  .block2{
+    margin: 0.1rem;
+  }
+  .abnum{
+    font-size: 13px;
+  }
+  .s-pad{
+    padding: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  html{
+    font-size: 1240%
+  }
+}
+@media screen and (max-width: 768px){
+  html{
+    font-size: 930%
+  }
+}
+@media screen and (max-width: 415px){
+  html{
+    font-size: 685%;
+  }
+}
+@media screen and (max-width: 376px){
+  html{
+    font-size: 625%;
+  }
+}
+@media screen and (max-width: 360px){
+  html{
+    font-size: 600%;
+  }
+}
+
+@media screen and (max-width: 320px){
+    html{
+    font-size: 530%;
+  }
+}
+
+

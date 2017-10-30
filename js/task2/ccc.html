@@ -15,11 +15,21 @@
     <input type="text" name="name" id="nn" />
     <input type="button" name="button" value="获取" onclick="print()" />
 </form>
-<script language="javascript">
-    function print(){
-        var a=document.getElementById("nn").value;
-        alert(a);
+
+<script>
+    function showColor() {
+        return this.color;
     }
+    function Car(sColor,iDoors,iMpg) {
+        this.color = sColor;
+        this.doors = iDoors;
+        this.mpg = iMpg;
+        this.showColor = showColor;
+    }
+
+    var oCar1 = new Car("red",4,23);
+    
+    console.log(oCar1.color);
 </script>
 </body>
 </html>
